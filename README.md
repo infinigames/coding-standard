@@ -269,51 +269,6 @@ constexpr int constexprFunctionName(
 functionName(argument);
 ```
 
-see this example C++ code for detail:
-
-```cpp
-
-#include <some_headers>
-
-namespace dimensium_coding_standard
-{
-    template <typename T>
-//          ^
-    class Stack
-    {
-        private:
-//  ^~~~         <---add an extra indentation before access modifiers
-            struct Node;
-            std::shared_ptr<Node> head;
-            std::mutex head_mutex;
-        public:
-            Stack(void) = default;
-//                     ^~~         <---add spaces
-            Stack(Stack const&) = delete;
-//                             ^~~
-            Stack &operator=(Stack const&) = delete;
-//                                        ^~~
-            Stack(Stack &&);
-            Stack &operator=(Stack &&);
-
-            void push(T const&);
-            std::shared_ptr<T> pop(void);
-
-            std::size_t size(void);
-//          reasonably add empty lines to separate different declarations.
-    };
-
-    template <typename T>
-    struct Stack<T>::Node
-    {
-        T item;
-        std::shared_ptr<T> down;
-    };
-
-    template 
-}
-```
-
 
 
 ###### 6.1.3 naming identifiers
