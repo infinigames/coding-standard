@@ -247,7 +247,7 @@ But don't put space after:
 - declarations of macro with parameters
 - function names in function-invoking expression statement.
 
-See ex.:
+See xmpl.:
 
 ```cpp
 ReturnType functionName(ArgumentType parameter)
@@ -318,7 +318,7 @@ namespace dimensium_coding_standard
 
 ###### 6.1.3 naming identifiers
 
-We use traditional C-Style function declarations and only put return type after declaration when necessary. When identifiers are too long, put them on next line and add an indentation on the start of the new line. Whatever, see the ex.:
+We use traditional C-Style function declarations and only put return type after declaration when necessary. When identifiers are too long, put them on next line and add an indentation on the start of the new line. Whatever, see the xmpl.:
 
 ```cpp
 
@@ -417,7 +417,7 @@ CompilerABIInfo compiler_abi_info;
 CompilerABIInfo compiler_a_b_i_info;
 ```
 
-Here's also a ex. for python to show how wide the range it can be used. We use `this` instead of `self` for the 1st parameter of member functions:
+Here's also a xmpl. for python to show how wide the range it can be used. We use `this` instead of `self` for the 1st parameter of member functions:
 
 ```python
 def someFunction():
@@ -434,7 +434,7 @@ class SomeClass(SomeBaseClass):
         pass
 ```
 
-Ex. for Javascript:
+xmpl. for Javascript:
 
 ```javascript
 class SomeClass
