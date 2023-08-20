@@ -1,4 +1,4 @@
-# :triangle_ruler: **the Dimensium Coding Standard**
+# :triangular_ruler: **the Dimensium Coding Standard**
 
 **Team rules**. This repository contains our coding standard, which will strictly applied to every repositories we hosted.
 
