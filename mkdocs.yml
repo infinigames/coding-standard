@@ -1,0 +1,163 @@
+
+
+# navigation bar settings.
+nav:  
+
+
+
+
+
+
+# theme settings.
+theme:
+  name: material
+  custom_dir: overrides
+  lang: en
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  
+  logo: assets/images/dimensium-logo.svg
+
+
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+
+    - toc.integrate
+
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+
+    - search.suggest
+    - search.highlight
+    - search.share
+
+
+
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil-ruler
+    view: material/eye
+
+
+# mkdocs material plugins.
+plugins:
+  
+  - search
+
+  - tags:
+      tags_file: tags.md
+    
+
+  # revision date plugin, show the date when they edited and created on each page.
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+
+
+
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dimensium
+
+
+  # multi-language settings.
+  # If you want to add your translations, simply create your page and add your link:
+  # - name: Language-Full-Name
+  #   link: https://link.to.your.translated/docs
+  #   lang: XXX # your language code. visit https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/ for detail.
+  alternate:
+    - name: English
+      link: https://dimensium.github.io/coding-standard
+      lang: en
+
+
+
+
+
+
+
+# set to true to spread this theme
+  generator: true # TRUEEEEEEEEEEEEEEEEE ALWAYS
+
+
+# site fundamental configurations.
+
+site_name: "Coding Standard"
+site_description: "The coding standard of the Dimensium Software Organization."
+site_author: "The Dimensium Software Organization"
+site_url: "https://dimensium.github.io/coding-standard"
+strict: false
+
+# repository configurations.
+repo_name: "dimensium/docs"
+repo_url: "https://github.com/dimensium/coding-standard"
+edit_uri: "https://github.com/dimensium/coding-standard/edit/main/docs"
+
+# copyright.
+copyright: "Copyright &copy; 2023 Dimensium Software Organization"
+
+# favicon: assets/images/dimensium-logo.ico # enable it till we have the icon in .ico format.
