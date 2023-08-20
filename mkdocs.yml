@@ -152,7 +152,7 @@ site_url: "https://dimensium.github.io/coding-standard"
 strict: false
 
 # repository configurations.
-repo_name: "dimensium/docs"
+repo_name: "dimensium/coding-standard"
 repo_url: "https://github.com/dimensium/coding-standard"
 edit_uri: "https://github.com/dimensium/coding-standard/edit/main/docs"
 
